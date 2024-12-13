@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>marvin2</name>
+  <version>0.0.0</version>
+  <description>Mixed Python and C++ package for ROS 2</description>
+  <maintainer email="sergioromero48@outlook.com">sergio</maintainer>
+  <license>Apache-2.0</license>
+  
+  <!-- Dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>cv_bridge</depend>
+  <depend>apriltag_msgs</depend>
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>ament_index_python</depend>
+  <depend>opencv</depend>
+  <depend>numpy</depend>
+
+  <!-- Test dependencies -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <!-- Export both build types -->
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
